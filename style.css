@@ -1,88 +1,94 @@
-/* Reset básico */
+/* styles.css */
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
+
+
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f9fafb;
     color: #333;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    line-height: 1.6;
+    padding: 40px 20px;
 }
 
-/* Encabezado del perfil */
+/* Contenedor general */
+main,
+header,
+footer {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Encabezado */
 .profile-header {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     text-align: center;
     margin-bottom: 40px;
 }
 
 .profile-pic {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 16px;
+    object-fit: cover;
+    border: 3px solid #ccc;
+    margin-bottom: 15px;
 }
 
-.profile-header h1 {
-    font-size: 1.8rem;
-    margin-bottom: 4px;
-}
-
-.profile-header p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Contenido del perfil */
+/* Contenido principal */
 .profile-content {
-    max-width: 600px;
-    width: 100%;
-    background: #fff;
-    padding: 24px;
+    background-color: #ffffff;
+    padding: 30px;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .profile-content section {
-    margin-bottom: 24px;
+    margin-bottom: 30px;
 }
 
 .profile-content h2 {
-    font-size: 1.4rem;
-    margin-bottom: 12px;
-    color: #2c3e50;
+    font-size: 20px;
+    color: #374151;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .profile-content ul {
-    padding-left: 20px;
+    list-style: disc inside;
+    padding-left: 10px;
 }
 
 .profile-content li {
     margin-bottom: 6px;
 }
 
-/* Footer */
+/* Pie de página */
 .profile-footer {
-    margin-top: 32px;
     text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 15px;
+    color: #555;
 }
 
 .social-links a {
-    display: inline-block;
-    margin: 0 10px;
-    color: #444;
     text-decoration: none;
-    font-weight: 500;
-    transition: color 0.3s;
+    color: #4b5563;
+    margin: 0 10px;
+    transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #000;
+    color: #1f2937;
 }
